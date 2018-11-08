@@ -1,4 +1,4 @@
-workflow Start-VM-textual-workflow
+workflow Start-VMs_workflow
 {
     $c=Get-AutomationConnection -Name 'AzureRunAsConnection'
     add-AzureRmaccount -ServicePrincipal -Tenant $c.TenantID -ApplicationId $c.ApplicationID -CertificateThumbprint $c.CertificateThumbprint
